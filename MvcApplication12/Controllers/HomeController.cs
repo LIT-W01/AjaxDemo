@@ -47,7 +47,7 @@ namespace MvcApplication12.Controllers
         public ActionResult GetPeople(int peopleAmount)
         {
             IEnumerable<Person> ppl = Person.GetRandomPeople(peopleAmount);
-            return Json(ppl, JsonRequestBehavior.AllowGet);
+            return Json(ppl);
         }
 
     }
